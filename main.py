@@ -1,3 +1,4 @@
+import data_manager
 def main():
 
     while True:
@@ -23,7 +24,8 @@ def main():
 
         match choice:
             case 1:
-                print("Generate new sales dataset selected")
+                data = data_manager.generate_sales_dataset()
+                print(data)
             case 2:
                 print("Load saved dataset selected")
             case 3:
